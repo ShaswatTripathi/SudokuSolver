@@ -1,0 +1,36 @@
+.heading {
+  text-align: center;
+  margin: auto;
+  background-color: red;
+  color: blue;
+}
+
+.input_box {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+}
+
+.board {
+  /* background-color: black; */
+  height: 400px;
+}
+
+.playing_part {
+  padding: 70px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.buttons {
+  background-color: rgb(0, 255, 0);
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.body {
+  background-image: url("background.jpg");
+}

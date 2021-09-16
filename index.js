@@ -10,6 +10,14 @@ var board = [
             [0,0, 0, 0, 0, 0, 0, 0, 0, 0], 
             [0,0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
+function init(){
+    for(var i=1;i<=9;++i){
+        for(var j=1;j<=9;++j){
+            board[i][j] = 0;
+        }
+    }
+}
+
 function takeInput(){
     for(var i=1;i<=9;++i){
         for(var j=1;j<=9;++j){
@@ -98,6 +106,7 @@ function f(a , b){
 }
 function solve(){
     // console.log(1);
+    init();
     takeInput();
     if(!isValid()){
         alert("Input State has no valid solutions");

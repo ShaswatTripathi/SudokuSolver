@@ -75,6 +75,7 @@ function isValid(){
         for(let j=1;j<=9;++j){
             if(board[i][j] == 0) continue;
             let x = board[i][j]; board[i][j] = 0;
+            if(x < 1 || x > 9) return false;
             if(!(cr(i,x) && cc(j,x) && cg(i,j,x))){
                 return false;                
             }
